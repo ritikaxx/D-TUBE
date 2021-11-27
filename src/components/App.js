@@ -62,12 +62,14 @@ class App extends Component {
     }
   }
 
+//preprocess the file so that it can be uploaded to ipfs
   captureFile = event => {
     event.preventDefault()
-    const file = event.target.files[0]
-    const reader = new window.FileReader()
-    reader.readAsArrayBuffer(file)
+    const file = event.target.files[0]   //gets the file from html
+    const reader = new window.FileReader()   //using js filereader function
+    reader.readAsArrayBuffer(file)      //reading as an array buffer
 
+//converts it into a format (buffer) that ipfs understands
     reader.onloadend = () => {
       this.setState({ buffer: Buffer(reader.result) })
       console.log('buffer', this.state.buffer)
@@ -77,6 +79,7 @@ class App extends Component {
 
   uploadVideo = title => {
     console.log("Submitting file to IPFS...")
+    
     //adding file to the IPFS
     ipfs.add(this.state.buffer, (error, result) => {
       console.log('IPFS result', result)
@@ -84,7 +87,7 @@ class App extends Component {
         console.error(error)
         return
       }
-
+      //upload to the blockchain
       this.setState({ loading: true })
       this.state.dtube.methods.uploadVideo(result[0].hash, title).send({ from: this.state.account }).on('transactionHash', (hash) => {
         this.setState({ loading: false })
