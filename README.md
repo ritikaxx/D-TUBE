@@ -42,4 +42,29 @@ Blockchain is secure because it relies heavily on secure cryptographic hash func
   •	Tools: IPFS
   •	Platforms: Ethereum
 
+## RUN THE PROJECT
 
+Install truffle framework using the command
+
+   npm install --g truffle
+   
+Install Ganache (Personal blockchain with fake ethers)
+
+Install Metamask Google Chrome Extension (Wallet)
+
+Clone the project
+
+   git clone <url>
+ 
+Install the dependencies
+ 
+   npm install
+ 
+Deploy the Smart Contracts
+ 
+   truffle migrate --reset
+ 
+Run the project 
+ 
+   npm start
+ 
