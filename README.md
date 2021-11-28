@@ -28,3 +28,8 @@ Blockchain is secure because it relies heavily on secure cryptographic hash func
 • Block: An architecture of the blockchain which is at the core of managing the decentralized ledger.
 • Consensus: An agreement between node operators to ensure the validity of a transaction abiding by a set of rules and arrangements.
  
+ 
+## ARCHITECTURE DIAGRAM
+
+![image](https://user-images.githubusercontent.com/68536395/143733320-fe64199d-c9db-403f-9965-52866b9ec6b9.png)
+
