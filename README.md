@@ -35,12 +35,21 @@ Blockchain is secure because it relies heavily on secure cryptographic hash func
 
 ## TECHNOLOGIES USED-
 
-  •	Languages: 
+  Languages: 
+  
   Solidity, JavaScript, HTML5, CSS3
-  •	Libraries:
+  
+  Libraries:
+  
   React.js, Web3.js
-  •	Tools: IPFS
-  •	Platforms: Ethereum
+  
+  Tools: 
+  
+  IPFS
+  
+  Platforms: 
+  
+  Ethereum
 
 ## RUN THE PROJECT
 
