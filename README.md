@@ -19,3 +19,12 @@ Blockchain applications are being explored in many industries as a secure and co
 ## Why is blockchain secure?
 
 Blockchain is secure because it relies heavily on secure cryptographic hash functions. These hash functions, a digital signature, and a proof-of-work algorithm ensure that the data is valid and not tampered with. Overall, blockchain is a revolutionary, secure technology.
+
+## Components of Blockchain-
+
+• Node: The hardware running the Blockchain
+• Wallets: User interfaces initiating a transaction.
+• Transaction: A transfer of value, a call to do a certain activity.
+• Block: An architecture of the blockchain which is at the core of managing the decentralized ledger.
+• Consensus: An agreement between node operators to ensure the validity of a transaction abiding by a set of rules and arrangements.
+ 
